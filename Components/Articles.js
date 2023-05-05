@@ -102,17 +102,18 @@ borderRadius: "20.937px" , marginBottom:"3em",gap:"10px"}}>
   <h2 style={{color: "#7c8fd0" , fontSize:"21px"}
   } >Grilled Tomatoes at Home</h2>
   <Accordion expanded={expanded === 'panel1'} onChange={handleChange('panel1')}>
-        <AccordionSummary aria-controls="panel1d-content" id="panel1d-header">
-        <Button sx={{margin:"1em 0" , padding: "10px 26px" , 
-borderRadius: "21px",background:"#e23744",color:"#fff"}}>Read More</Button>
-        </AccordionSummary>
-        <AccordionDetails>
-          <Typography>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-            malesuada lacus ex, sit amet blandit leo lobortis eget.
-          </Typography>
-        </AccordionDetails>
-        </Accordion>
+  <AccordionSummary aria-controls="panel1d-content" id="panel1d-header">
+    <Button sx={{margin:"1em 0" , padding: "10px 26px" , borderRadius: "21px",background:"#e23744",color:"#fff"}}>
+      {expanded === 'panel1' ? 'Read Less' : 'Read More'}
+    </Button>
+  </AccordionSummary>
+  <AccordionDetails>
+    <Typography>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.
+    </Typography>
+  </AccordionDetails>
+</Accordion>
+
   
   </div>
   <div className='cards' style={{ maxWidth: "381px", height: "500px" , display:"flex" , flexDirection:"column" , justifyContent:"center" , alignItems:"center" , background: "rgb(56 50 50 / 25%)",
@@ -125,8 +126,9 @@ borderRadius: "20.937px",gap:"10px"}}>
   } >Snacks for Travel</h2>
 <Accordion expanded={expanded === 'panel2'} onChange={handleChange('panel2')}>
         <AccordionSummary aria-controls="panel2d-content" id="panel2d-header">
-        <Button sx={{margin:"1em 0" , padding: "10px 26px" , 
-borderRadius: "21px",background:"#e23744",color:"#fff"}}>Read More</Button>
+        <Button sx={{margin:"1em 0" , padding: "10px 26px" , borderRadius: "21px",background:"#e23744",color:"#fff"}}>
+      {expanded === 'panel2' ? 'Read Less' : 'Read More'}
+    </Button>
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
@@ -146,8 +148,9 @@ borderRadius: "20.937px",gap:"10px"}}>
   } >Post-workout Recipes</h2>
  <Accordion expanded={expanded === 'panel3'} onChange={handleChange('panel3')}>
         <AccordionSummary aria-controls="panel3d-content" id="panel3d-header">
-        <Button sx={{margin:"1em 0" , padding: "10px 26px" , 
-borderRadius: "21px",background:"#e23744",color:"#fff"}}>Read More</Button>
+        <Button sx={{margin:"1em 0" , padding: "10px 26px" , borderRadius: "21px",background:"#e23744",color:"#fff"}}>
+      {expanded === 'panel3' ? 'Read Less' : 'Read More'}
+    </Button>
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
@@ -167,8 +170,9 @@ borderRadius: "20.937px",gap:"10px"}}>
   } >How to Grill Corn</h2>
  <Accordion expanded={expanded === 'panel4'} onChange={handleChange('panel4')}>
         <AccordionSummary aria-controls="panel4d-content" id="panel4d-header">
-        <Button sx={{margin:"1em 0" , padding: "10px 26px" , 
-borderRadius: "21px",background:"#e23744",color:"#fff"}}>Read More</Button>
+        <Button sx={{margin:"1em 0" , padding: "10px 26px" , borderRadius: "21px",background:"#e23744",color:"#fff"}}>
+      {expanded === 'panel4' ? 'Read Less' : 'Read More'}
+    </Button>
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
@@ -188,8 +192,9 @@ borderRadius: "20.937px",gap:"10px"}}>
   } >CrunchWrap Supreme</h2>
  <Accordion expanded={expanded === 'panel5'} onChange={handleChange('panel5')}>
         <AccordionSummary aria-controls="panel5d-content" id="panel2d-header">
-        <Button sx={{margin:"1em 0" , padding: "10px 26px" , 
-borderRadius: "21px",background:"#e23744",color:"#fff"}}>Read More</Button>
+        <Button sx={{margin:"1em 0" , padding: "10px 26px" , borderRadius: "21px",background:"#e23744",color:"#fff"}}>
+      {expanded === 'panel5' ? 'Read Less' : 'Read More'}
+    </Button>
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
@@ -209,8 +214,9 @@ borderRadius: "20.937px",gap:"10px"}}>
   } >Broccoli Cheese Soup</h2>
  <Accordion expanded={expanded === 'panel6'} onChange={handleChange('panel6')}>
         <AccordionSummary aria-controls="panel6d-content" id="panel2d-header">
-        <Button sx={{margin:"1em 0" , padding: "10px 26px" , 
-borderRadius: "21px",background:"#e23744",color:"#fff"}}>Read More</Button>
+        <Button sx={{margin:"1em 0" , padding: "10px 26px" , borderRadius: "21px",background:"#e23744",color:"#fff"}}>
+      {expanded === 'panel6' ? 'Read Less' : 'Read More'}
+    </Button>
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
